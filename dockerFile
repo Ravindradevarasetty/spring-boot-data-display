@@ -1,0 +1,7 @@
+FROM openjdk:8
+
+WORKDIR /app
+
+COPY target/spring-boot-data-display-0.0.1-SNAPSHOT.jar /app/spring-boot-data-display.jar
+
+ENTRYPOINT ["java", "-jar", "spring-boot-data-display.jar"]
